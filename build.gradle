@@ -52,6 +52,12 @@ bootJar {
     archiveFileName = "${archiveBaseName.get()}.${archiveExtension.get()}"
 }
 
+jacocoTestReport {
+    reports {
+        xml.enabled true
+    }
+}
+
 sonarqube {
   properties {
     property "sonar.projectKey", "sopra-fs23-test_server"
